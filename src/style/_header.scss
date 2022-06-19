@@ -1,0 +1,77 @@
+@import "fonts";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  box-shadow: (0px 2px 8px rgba(50, 59, 80, 0.05));
+
+  &__inner {
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding-left: 15px;
+      width: 150px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-right: 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-item {
+      padding-left: 25px;
+    }
+  }
+
+  &__burgerMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    &__link {
+      display: none;
+    }
+
+    &__burgerMenu {
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/burger.svg") center no-repeat;
+      background-size: contain;
+    }
+  }
+}

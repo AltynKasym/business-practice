@@ -1,0 +1,351 @@
+.main {
+  &__banner {
+    display: flex;
+    align-items: center;
+    margin: 88px -10px 35px;
+
+    & > .row {
+      align-items: flex-end;
+      margin-bottom: -85px;
+    }
+  }
+
+  &__future {
+    // margin-top: 30px;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 76px;
+    }
+
+    &-img {
+      width: 35px;
+      height: 38px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &-text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      padding-left: 60px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.banner {
+  &-octagon {
+    margin-bottom: -100px;
+    width: 165px;
+  }
+  &-topLine {
+    margin-left: 50px;
+  }
+  &-bottomLine {
+    width: 606px;
+    margin: -75px 0 0 30px;
+  }
+  &-bottomLine2 {
+    display: none;
+  }
+  &-arrows {
+    display: none;
+  }
+
+  &__info {
+    padding: 14px 0 0 40px;
+
+    &-title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      text-transform: uppercase;
+    }
+
+    &-subtitle {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      text-transform: uppercase;
+      padding: 4px 0 20px;
+    }
+
+    &-text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      padding-bottom: 32px;
+    }
+
+    &-button {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #47cf34;
+      padding: 14px 32px;
+      border-radius: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main {
+    &__banner {
+      display: flex;
+      align-items: center;
+      margin: 88px -10px 35px;
+
+      & > .row {
+        // align-items: flex-end;
+        margin-bottom: -65px;
+      }
+    }
+  }
+  .banner {
+    &-octagon {
+      margin-bottom: -70px;
+      width: 145px;
+    }
+
+    &-bottomLine {
+      width: 506px;
+      margin: -45px 0 0 30px;
+    }
+
+    &__info {
+      padding-left: 35px;
+      &-title {
+        font-size: 36px;
+        line-height: 50px;
+      }
+
+      &-subtitle {
+        font-size: 27px;
+        line-height: 35px;
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    &__banner {
+      display: flex;
+      align-items: center;
+      margin: 38px -10px 25px;
+
+      & > .row {
+        align-items: flex-start;
+        margin-bottom: -85px;
+      }
+    }
+
+    &__future {
+      margin-top: 0px;
+      padding: 0 20px;
+      &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      // &-img {
+      //   width: 35px;
+      //   height: 38px;
+      //   display: flex;
+      //   justify-content: flex-start;
+      // }
+
+      &-text {
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .banner {
+    &-octagon {
+      margin-bottom: -50px;
+      width: 160px;
+    }
+
+    &-topLine {
+      // margin-top: 80px;
+      margin-left: 0px;
+    }
+
+    &-bottomLine {
+      display: none;
+    }
+    &-bottomLine2 {
+      display: block;
+      margin-left: 20px;
+      margin-top: -20px;
+    }
+
+    &__info {
+      padding-top: 40px;
+      &-title {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 5px 0;
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    &__banner {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 38px -10px 25px;
+
+      & > .row {
+        display: none;
+      }
+    }
+
+    &__future {
+      margin-top: 0px;
+      padding: 0 20px;
+      &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 46px;
+      }
+
+      // &-img {
+      //   width: 35px;
+      //   height: 38px;
+      //   display: flex;
+      //   justify-content: flex-start;
+      // }
+
+      &-text {
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .banner {
+    &-bottomLine2 {
+      display: none;
+    }
+    &-arrows {
+      display: block;
+      margin: 50px auto 62px;
+    }
+
+    &__info {
+      text-align: center;
+      padding: 22px 0 0;
+      &-title {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 5px 0;
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 17px;
+        // padding-bottom: 24px;
+        padding: 16px 15px 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 176px) {
+  .main {
+    &__banner {
+      display: flex;
+      align-items: center;
+      margin: 92px 0 5px;
+
+      & > .row {
+        // align-items: flex-end;
+        margin-bottom: -65px;
+      }
+    }
+  }
+
+  .banner {
+    &-octagon {
+      margin-bottom: -60px;
+      width: 125px;
+    }
+
+    &-bottomLine {
+      width: 100%;
+      margin: -10px 0 0 30px;
+    }
+
+    &__info {
+      padding-left: 30px;
+      &-title {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 5px 0;
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 29px;
+      }
+    }
+  }
+}

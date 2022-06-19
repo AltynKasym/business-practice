@@ -1,0 +1,10 @@
+mixin image(name,ext,alt,textClass)
+    img(src=require(`./images/${name}.${ext}`) alt=alt class!=textClass)
+
+mixin list(text,imageClass,textClass)
+    img(src=require(`./images/logo.svg`) class!=imageClass)
+    p(class!=textClass)=text  
+
+mixin servicesList(image,imageClass,text,textClass)
+    img(src=require(image) class!=imageClass)
+    p(class!=textClass)=text  

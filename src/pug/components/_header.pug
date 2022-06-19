@@ -1,0 +1,24 @@
+header.header
+    .container
+        .header__inner.row 
+            //- +image('logo','svg').header__logo-image
+            a.header__logo.col-4(href='#')
+                img.header__logo-image(src='./images/logo.svg' alt='Logo')
+                h3.header__logo-text Бизнес практика
+            ul.header__nav.col-6
+                li.header__nav-item(href='#') Консультации
+                li.header__nav-item(href='#') Услуги
+                li.header__nav-item(href='#') Тренинги
+                a(href='https://example.com' target='_blank')
+                    li.header__nav-item Блог
+            .header__link.col-2 
+                a(href='https://facebook.com' target='_blank')
+                    +image('facebook','svg','link to facebook','header__link-item   ')
+                    //- img.header__link-item(src='./images/facebook.svg' alt='link to facebook')
+                a(href='https://whatsapp.com' target='_blank')
+                    img.header__link-item(src='./images/whatsapp.svg' alt='link to whatsapp')
+                a(href='https://t.me' target='_blank')
+                    img.header__link-item(src='./images/telegram.svg' alt='link to telegram')
+            .header__burgerMenu.col-1
+
+
