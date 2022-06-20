@@ -2,25 +2,27 @@
 
 section.services.container
     img.services-octagon(src='./images/services-octagon.svg')
-    img.services-line(src='./images/services-line.svg')
+    img.services-line.col-md-8(src='./images/services-line.svg')
     h1.services-title Услуги
     .row
-        .services__item.col-4
-            img.services__item-image(src='./images/report.svg')
-            p.services__item-text Разрабатываем маркетинг-план: дорожная карта достижения целей
+        .col-md-6.col-lg-4
+            .services__item
+                img.services__item-image(src='./images/report.svg')
+                p.services__item-text Разрабатываем маркетинг-план: дорожная карта достижения целей
 
-        .col
-            .services__item 
+        .col-md-6.col-lg-8
+            .services__item.services__hor 
                 img.services__item-image(src='./images/idea.svg')
                 p.services__item-text Повышаем эффективность продвижения: аудит существующей модели
         
-            .row
-                .services__item.col-5
-                    img.services__item-image(src='./images/search.svg')
-                    p.services__item-text Находим скрытую прибыль: анализ модели ценообразования
+        .col-md-6.col-lg-4
+            .services__item
+                img.services__item-image(src='./images/search.svg')
+                p.services__item-text Находим скрытую прибыль: анализ модели ценообразования
 
-                .services__item.col-5
-                    img.services__item-image(src='./images/startup.svg')
-                    p.services__item-text Запускаем новый проект: start-up маркетинг
+        .col-md-6.col-lg-4
+            .services__item
+                img.services__item-image(src='./images/startup.svg')
+                p.services__item-text Запускаем новый проект: start-up маркетинг
 
     

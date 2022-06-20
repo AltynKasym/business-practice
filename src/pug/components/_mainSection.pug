@@ -1,5 +1,5 @@
 
--var futureList=['Как найти точки роста и определить цели?', 'Как увеличить прибыль, управляя ценами?','Как избежать проблем на старте нового бизнеса?','Как не попасть в "черную дыру" затрат на продвижение?']
+-var featureList=['Как найти точки роста и определить цели?', 'Как увеличить прибыль, управляя ценами?','Как избежать проблем на старте нового бизнеса?','Как не попасть в "черную дыру" затрат на продвижение?']
 
 section.main.container
     .main__banner.row
@@ -14,18 +14,17 @@ section.main.container
             button.banner__info-button Обсудить проблему
             img.banner-arrows.col(src='./images/arrows.svg')   
         .col-md-1
-        //- .banner__media.col-md-5
         img.banner__media.col-9.col-md-5(src='./images/cube.svg')
         .col-2 
         .col-7 
           img.banner-bottomLine.col-md-7(src='./images/bottom-line.svg')   
           img.banner-bottomLine2.col-ls-6(src='./images/bottom-line2.svg')   
           
-    .main__future.row 
-        each item in futureList
-            .main__future-item.col-11.col-md-6
+    .main__feature.row 
+        each item in featureList
+            .main__feature-item.col-12.col-md-6
                 .col-md-0.col-lg-2  
-                +list(item,'main__future-img col-md-1 col-lg-2  ','main__future-text col-md-10 col-lg-8')
+                +list(item,'main__feature-img col-md-1 col-lg-2  ','main__feature-text col-md-10 col-lg-7')
                 .col-md-0.col-lg-2  
 
 

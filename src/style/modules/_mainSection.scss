@@ -10,8 +10,7 @@
     }
   }
 
-  &__future {
-    // margin-top: 30px;
+  &__feature {
     &-item {
       display: flex;
       flex-direction: row;
@@ -29,8 +28,6 @@
 
     &-text {
       font-family: "Lato", sans-serif;
-      font-style: normal;
-      font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       padding-left: 60px;
@@ -163,7 +160,7 @@
       }
     }
 
-    &__future {
+    &__feature {
       margin-top: 0px;
       padding: 0 20px;
       &-item {
@@ -174,16 +171,7 @@
         margin-bottom: 40px;
       }
 
-      // &-img {
-      //   width: 35px;
-      //   height: 38px;
-      //   display: flex;
-      //   justify-content: flex-start;
-      // }
-
       &-text {
-        font-size: 16px;
-        line-height: 19px;
         padding-left: 30px;
       }
     }
@@ -196,7 +184,6 @@
     }
 
     &-topLine {
-      // margin-top: 80px;
       margin-left: 0px;
     }
 
@@ -244,7 +231,7 @@
       }
     }
 
-    &__future {
+    &__feature {
       margin-top: 0px;
       padding: 0 20px;
       &-item {
@@ -252,25 +239,14 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 46px;
-      }
-
-      // &-img {
-      //   width: 35px;
-      //   height: 38px;
-      //   display: flex;
-      //   justify-content: flex-start;
-      // }
-
-      &-text {
-        font-size: 16px;
-        line-height: 19px;
-        padding-left: 20px;
+        margin-bottom: 40px;
       }
     }
   }
 
   .banner {
+    // margin-top: 5px;
+
     &-bottomLine2 {
       display: none;
     }
@@ -282,6 +258,7 @@
     &__info {
       text-align: center;
       padding: 22px 0 0;
+      margin-top: 15px;
       &-title {
         font-size: 28px;
         line-height: 34px;
@@ -297,55 +274,12 @@
         font-size: 14px;
         line-height: 17px;
         // padding-bottom: 24px;
-        padding: 16px 15px 24px;
+        padding: 12px 15px 24px;
       }
     }
-  }
-}
 
-@media screen and (max-width: 176px) {
-  .main {
-    &__banner {
-      display: flex;
-      align-items: center;
-      margin: 92px 0 5px;
-
-      & > .row {
-        // align-items: flex-end;
-        margin-bottom: -65px;
-      }
-    }
-  }
-
-  .banner {
-    &-octagon {
-      margin-bottom: -60px;
-      width: 125px;
-    }
-
-    &-bottomLine {
-      width: 100%;
-      margin: -10px 0 0 30px;
-    }
-
-    &__info {
-      padding-left: 30px;
-      &-title {
-        font-size: 28px;
-        line-height: 34px;
-      }
-
-      &-subtitle {
-        font-size: 18px;
-        line-height: 22px;
-        padding: 5px 0;
-      }
-
-      &-text {
-        font-size: 14px;
-        line-height: 17px;
-        padding-bottom: 29px;
-      }
+    &__media {
+      width: 265px;
     }
   }
 }
