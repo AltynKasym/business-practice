@@ -2,13 +2,15 @@ header.header
     .container
         .header__inner.row 
             //- +image('logo','svg').header__logo-image
-            a.header__logo.col-4(href='#')
+            a.header__logo.col-4(href='/')
                 img.header__logo-image(src='./images/logo.svg' alt='Logo')
                 h3.header__logo-text Бизнес практика
             ul.header__nav.col-6
                 li.header__nav-item(href='#') Консультации
-                li.header__nav-item(href='#') Услуги
-                li.header__nav-item(href='#') Тренинги
+                a(href='/services.html')
+                    li.header__nav-item(href='#') Услуги
+                a(href='/training.html')
+                    li.header__nav-item(href='#') Тренинги
                 a(href='https://example.com' target='_blank')
                     li.header__nav-item Блог
             .header__link.col-2 

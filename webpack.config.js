@@ -35,7 +35,16 @@ module.exports = {
       filename: "[name].[contenthash].css",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/index.pug",
+      filename: "index.html",
+      template: "./src/main.pug",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "services.html",
+      template: "./src/services.pug",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "training.html",
+      template: "./src/training.pug",
     }),
   ],
   module: {
