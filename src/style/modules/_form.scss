@@ -1,0 +1,78 @@
+.form {
+  padding: 145px 0 40px;
+  margin-bottom: 54px;
+  background: url("../images/form-bg.svg") center bottom no-repeat;
+
+  &__inner {
+    min-height: 349px;
+    padding: 78px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: (4px 4px 20px rgba(40, 44, 55, 0.2));
+    border-radius: 20px;
+    width: 643px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  &__input {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid #9fa7b0;
+    border-radius: 8px;
+    width: 100%;
+    padding: 14px 20px;
+    outline: #9fa7b0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .form {
+    padding: 35px 40px 40px;
+    background: none;
+
+    &__inner {
+      min-height: 310px;
+      padding: 58px 56px;
+      max-width: 543px;
+      margin: 0 auto;
+    }
+
+    &__input {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 12px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    padding: 35px 20px 20px;
+    background: none;
+
+    &__inner {
+      min-height: 270px;
+      padding: 50px 30px;
+      max-width: 95%;
+      margin: 0 auto;
+    }
+
+    &__input {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 12px 20px;
+    }
+
+    &__button {
+      font-size: 12px;
+
+      line-height: 20px;
+      padding: 15px 20px;
+    }
+  }
+}

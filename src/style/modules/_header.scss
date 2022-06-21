@@ -42,18 +42,39 @@
     padding-right: 30px;
   }
 
+  // &__link {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   align-items: center;
+
+  //   &-item {
+  //     padding-left: 25px;
+  //   }
+
   &__link {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: right;
 
     &-item {
       padding-left: 25px;
     }
-  }
 
-  &__burgerMenu {
-    display: none;
+    svg {
+      margin-left: 25px;
+    }
+
+    svg path {
+      fill: #282c37;
+    }
+
+    svg:hover {
+      path {
+        fill: #47cf34;
+      }
+    }
+
+    &__burgerMenu {
+      display: none;
+    }
   }
 }
 

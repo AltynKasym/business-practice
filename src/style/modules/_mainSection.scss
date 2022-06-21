@@ -86,20 +86,27 @@
       line-height: 26px;
       padding-bottom: 32px;
     }
+  }
+}
 
-    &-button {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: #47cf34;
-      padding: 14px 32px;
-      border-radius: 8px;
-    }
+button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #47cf34;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #30b01e;
+    transition: all 0.2s;
   }
 }
 
