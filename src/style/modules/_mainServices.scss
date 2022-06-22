@@ -21,22 +21,27 @@
     justify-content: flex-end;
 
     & > div:nth-child(n + 3) {
-      & > div {
+      & > a > div {
         margin-top: -330px;
         min-height: 328px;
       }
 
-      & > div > img {
+      & > a > div > img {
         padding-bottom: 32px;
       }
     }
 
-    & > div:first-child > div {
+    & > div:first-child > a > div {
       padding: 165px 55px;
 
       & > img {
         padding-bottom: 32px;
       }
+    }
+    & > div:nth-child(2) > a > div {
+      display: flex;
+      align-items: center;
+      padding: 42px 95px;
     }
   }
   &__item {
@@ -71,17 +76,11 @@
 @media screen and (max-width: 1199px) {
   .services {
     & > .row {
-      & > div:nth-child(n + 3) {
-        & > div {
-          margin-top: -330px;
-          min-height: 328px;
-        }
-      }
-
-      & > div:first-child > div {
-        padding: 180px 55px;
+      & > div:first-child > a > div {
+        padding: 155px 55px;
       }
     }
+
     &__item {
       padding: 65px 55px;
     }
@@ -106,23 +105,28 @@
       margin: 48px -20px 0;
 
       & > div:nth-child(n + 3) {
-        & > div {
+        & > a > div {
           margin-top: 15px;
           padding: 55px 50px;
           min-height: 249px;
         }
 
-        & > div > img {
+        & > a > div > img {
           padding-bottom: 12px;
         }
       }
 
-      & > div:first-child > div {
+      & > div:first-child > a > div {
         padding: 59px 50px;
 
         & > img {
           padding-bottom: 12px;
         }
+      }
+
+      & > div:nth-child(2) > a > div {
+        padding: 53px 50px;
+        flex-direction: column;
       }
     }
     &__item {
@@ -133,10 +137,6 @@
         width: 25%;
         padding-bottom: 18px;
       }
-    }
-    &__hor {
-      padding: 53px 50px;
-      flex-direction: column;
     }
   }
 }
@@ -163,18 +163,18 @@
       margin: 48px -20px 0;
 
       & > div:nth-child(n + 3) {
-        & > div {
+        & > a > div {
           margin-top: 15px;
           padding: 55px 50px;
           min-height: 249px;
         }
 
-        & > div > img {
+        & > a > div > img {
           padding-bottom: 12px;
         }
       }
 
-      & > div:first-child > div {
+      & > div:first-child > a > div {
         padding: 55px 50px;
         margin-bottom: 15px;
 
@@ -189,9 +189,5 @@
         padding-bottom: 18px;
       }
     }
-    // &__hor {
-    //   padding: 53px 50px;
-    //   flex-direction: column;
-    // }
   }
 }

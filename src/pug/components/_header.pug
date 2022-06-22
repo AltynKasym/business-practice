@@ -2,20 +2,20 @@ header.header
     .container
         .header__inner.row 
             //- +image('logo','svg').header__logo-image
-            a.header__logo.col-4(href='/')
+            a.header__logo.col-4
                 img.header__logo-image(src='./images/logo.svg' alt='Logo')
                 h3.header__logo-text Бизнес практика
             ul.header__nav.col-6
-                li.header__nav-item(href='#') Консультации
-                a(href='/services.html')
-                    li.header__nav-item(href='#') Услуги
-                a(href='/training.html')
-                    li.header__nav-item(href='#') Тренинги
+                a(href='/')
+                    li.header__nav-item Консультации
+                a(href='#services')
+                    li.header__nav-item Услуги
+                a(href='/trainingsList.html')
+                    li.header__nav-item Тренинги
                 a(href='https://example.com' target='_blank')
                     li.header__nav-item Блог
             .header__link.col-2 
                 a(href='https://facebook.com' target='_blank')
-                    //- +image('facebook','svg','link to facebook','header__link-item   ')
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_7_500)">
                     <path d="M24 12.074C24 5.40499 18.6269 -0.00100708 11.9999 -0.00100708C5.36995 0.00049292 -0.00305176 5.40499 -0.00305176 12.0755C-0.00305176 18.101 4.38595 23.096 10.1219 24.002V15.5645H7.07695V12.0755H10.1249V9.41299C10.1249 6.38749 11.9174 4.71649 14.6579 4.71649C15.9719 4.71649 17.3444 4.95199 17.3444 4.95199V7.92199H15.8309C14.3414 7.92199 13.8764 8.85349 13.8764 9.80899V12.074H17.2034L16.6724 15.563H13.8749V24.0005C19.6109 23.0945 24 18.0995 24 12.074Z" fill="#282C37"/>

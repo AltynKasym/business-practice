@@ -42,16 +42,9 @@
     padding-right: 30px;
   }
 
-  // &__link {
-  //   display: flex;
-  //   justify-content: flex-end;
-  //   align-items: center;
-
-  //   &-item {
-  //     padding-left: 25px;
-  //   }
-
   &__link {
+    display: flex;
+    flex-wrap: nowrap;
     text-align: right;
 
     &-item {
@@ -66,9 +59,21 @@
       fill: #282c37;
     }
 
-    svg:hover {
+    a:nth-child(1) > svg:hover {
       path {
-        fill: #47cf34;
+        fill: #3b5998;
+      }
+    }
+
+    a:nth-child(2) > svg:hover {
+      path {
+        fill: #43d854;
+      }
+    }
+
+    a:nth-child(3) > svg:hover {
+      path {
+        fill: #0088cc;
       }
     }
 

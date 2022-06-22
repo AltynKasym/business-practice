@@ -33,6 +33,14 @@
       padding-left: 60px;
       display: flex;
       justify-content: flex-start;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #5391dc;
+        text-decoration: underline;
+        transition: all 0.2s;
+      }
     }
   }
 }

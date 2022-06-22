@@ -46,6 +46,10 @@ module.exports = {
       filename: "training.html",
       template: "./src/training.pug",
     }),
+    new HtmlWebpackPlugin({
+      filename: "trainingsList.html",
+      template: "./src/trainingList.pug",
+    }),
   ],
   module: {
     rules: [
@@ -84,11 +88,15 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
+
       {
         test: /\.pug$/,
         loader: "pug-loader",
-        exclude: /(node_modules|bower_components)/,
+        options: {
+          pretty: true,
+        },
       },
+
       {
         test: /\.m?js$/,
         exclude: /node_modules/,

@@ -1,28 +1,32 @@
+- 
+    let servicesList = [
+        {image:'./images/report.svg',
+        class:'col-md-6 col-lg-4',
+        text:'Разрабатываем маркетинг-план: дорожная карта достижения целей'},
+        {image:'./images/idea.svg',
+        class:'col-md-6 col-lg-8',
+        text:'Повышаем эффективность продвижения: аудит существующей модели'},
+        {image:'./images/search.svg',
+        class:'col-md-6 col-lg-4',
+        text:'Находим скрытую прибыль: анализ модели ценообразования'},
+        {image:'./images/startup.svg',
+        class:'col-md-6 col-lg-4',
+        text:'Запускаем новый проект: start-up маркетинг'},
+    ]
 
-
-section.services.container
+section.services.container#services
     img.services-octagon(src='./images/services-octagon.svg')
     img.services-line.col-md-8(src='./images/services-line.svg')
     h1.services-title Услуги
     .row
-        .col-md-6.col-lg-4
-            .services__item
-                img.services__item-image(src='./images/report.svg')
-                p.services__item-text Разрабатываем маркетинг-план: дорожная карта достижения целей
+        each item in servicesList 
+            div(class=item.class)
+                a(href='/services.html')
+                    .services__item
+                        img.services__item-image(src=item.image)
+                        p.services__item-text=item.text
+                
 
-        .col-md-6.col-lg-8
-            .services__item.services__hor 
-                img.services__item-image(src='./images/idea.svg')
-                p.services__item-text Повышаем эффективность продвижения: аудит существующей модели
         
-        .col-md-6.col-lg-4
-            .services__item
-                img.services__item-image(src='./images/search.svg')
-                p.services__item-text Находим скрытую прибыль: анализ модели ценообразования
-
-        .col-md-6.col-lg-4
-            .services__item
-                img.services__item-image(src='./images/startup.svg')
-                p.services__item-text Запускаем новый проект: start-up маркетинг
 
     
