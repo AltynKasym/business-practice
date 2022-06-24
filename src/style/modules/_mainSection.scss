@@ -197,16 +197,6 @@
       padding-bottom: 32px;
     }
   }
-
-  &-button {
-    background-color: #47cf34;
-    transition: all 0.2s;
-
-    &:hover {
-      background-color: #30b01e;
-      transition: all 0.2s;
-    }
-  }
 }
 
 .button {
@@ -221,6 +211,13 @@
   padding: 14px 32px;
   border-radius: 8px;
   cursor: pointer;
+  background-color: #47cf34;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #30b01e;
+    transition: all 0.2s;
+  }
 }
 
 @media screen and (max-width: 1199px) {
