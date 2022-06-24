@@ -28,7 +28,7 @@ module.exports = {
     splitChunks: {
       chunks: "all",
     },
-    minimize: false,
+    // minimize: false,
   },
   plugins: [
     new MiniCssExtractPlugin({

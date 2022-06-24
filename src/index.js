@@ -1,6 +1,97 @@
 import "./style/style.scss";
 
-const userStack = { language: "JavaScript", framework: "React" };
+// Бургер меню
 
-const user = { name: "Altynbek", country: "Kyrgyzstan", ...userStack };
-console.log(user);
+const burgerMenu = document.querySelector(".header__burgerMenu");
+const MenuCloseButton = document.querySelector(".header__closeButton");
+const menu = document.querySelector(".header__nav");
+const body = document.querySelector("body");
+
+burgerMenu.addEventListener("click", openMenu);
+MenuCloseButton.addEventListener("click", closeMenu);
+
+function openMenu() {
+  menu.classList.add("visable");
+  body.style.overflowY = "hidden";
+}
+
+function closeMenu() {
+  menu.classList.remove("visable");
+  body.style.overflowY = "auto";
+}
+
+// Форма для заявки
+
+const bannerButton = document.querySelector(".banner-button");
+const formCloseButton = document.querySelector(".form-closeButton");
+const mainForm = document.querySelector(".form");
+
+bannerButton.addEventListener("click", openForm);
+formCloseButton.addEventListener("click", closeForm);
+
+function openForm() {
+  mainForm.classList.add("form-visable");
+  body.style.overflowY = "hidden";
+}
+
+function closeForm() {
+  mainForm.classList.remove("form-visable");
+  body.style.overflowY = "auto";
+  input.forEach((item, id) => {
+    item.value = "";
+  });
+}
+
+// Валидация
+const input = document.querySelectorAll(".form-input");
+const warning = document.querySelectorAll(".form-warning");
+const sendButton = document.querySelector(".form-button");
+const formStatus = document.querySelector(".form-status");
+
+sendButton.addEventListener("click", sendData);
+
+input.forEach((item, id) => {
+  item.oninput = function () {
+    if (item.value.trim().length < 1) {
+      warning[id].style.visibility = "visible";
+    } else {
+      warning[id].style.visibility = "hidden";
+    }
+  };
+});
+
+function sendData(e) {
+  e.preventDefault();
+  let k = 0;
+  input.forEach((item, id) => {
+    if (item.value.trim().length < 1) {
+      warning[id].style.visibility = "visible";
+    } else {
+      warning[id].style.visibility = "hidden";
+      k++;
+    }
+
+    // item.value = "";
+  });
+  if (k === 3) {
+    setInterval(
+      sendButton.classList.add("button-disabled"),
+      (sendButton.innerText = "Идет отправка..."),
+      sendButton.setAttribute("disabled", ""),
+      formStatus.classList.add("form-status-visiable"),
+      1000
+    );
+    setTimeout(() => {
+      sendButton.innerText = "Отправить";
+      sendButton.removeAttribute("disabled", "");
+      sendButton.classList.remove("button-disabled");
+      formStatus.classList.remove("form-status-visiable");
+      input.forEach((item, id) => {
+        item.value = "";
+      });
+    }, 3000);
+  }
+  console.log(
+    `Имя: ${input[0].value}, e-mail:${input[1].value}, Текст: ${input[2].value}`
+  );
+}

@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 768px) {
   .pageTraining {
-    padding-top: 15px;
+    padding: 15px 10px 0;
     background: none;
 
     &__octagon {
@@ -152,9 +152,18 @@
     }
 
     &__list {
-      padding-left: 0px;
+      padding: 0 0px 40px 0;
     }
 
+    &__case {
+      padding-left: 20px;
+    }
+
+    &__programm {
+      &-item {
+        padding: 0 0 17px 20px;
+      }
+    }
     &__development {
       padding-top: 13px;
       padding-left: 0;

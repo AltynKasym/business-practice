@@ -32,7 +32,7 @@
     }
 
     & > div:first-child > a > div {
-      padding: 165px 55px;
+      padding: 167px 55px;
 
       & > img {
         padding-bottom: 32px;
@@ -106,7 +106,7 @@
 
       & > div:nth-child(n + 3) {
         & > a > div {
-          margin-top: 15px;
+          margin-top: 17px;
           padding: 55px 50px;
           min-height: 249px;
         }
@@ -144,6 +144,7 @@
 @media screen and (max-width: 768px) {
   .services {
     padding: 0 30px;
+    margin-bottom: 40px;
     &-line {
       display: none;
     }

@@ -8,6 +8,8 @@
   box-shadow: (0px 2px 8px rgba(50, 59, 80, 0.05));
 
   &__inner {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   &__logo {
@@ -25,72 +27,121 @@
       padding-left: 15px;
       width: 150px;
     }
+
+    &-mobile {
+      display: none;
+    }
   }
 
   &__nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-right: 30px;
+    justify-content: flex-end;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding-right: 30px;
+    }
+
+    &-link {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+
+      svg {
+        margin-left: 25px;
+      }
+
+      svg path {
+        fill: #282c37;
+      }
+
+      a:nth-child(1) > svg:hover {
+        path {
+          fill: #3b5998;
+        }
+      }
+
+      a:nth-child(2) > svg:hover {
+        path {
+          fill: #43d854;
+        }
+      }
+
+      a:nth-child(3) > svg:hover {
+        path {
+          fill: #0088cc;
+        }
+      }
+
+      &__burgerMenu {
+        display: none;
+      }
+    }
   }
-
-  &__link {
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: right;
-
-    &-item {
-      padding-left: 25px;
-    }
-
-    svg {
-      margin-left: 25px;
-    }
-
-    svg path {
-      fill: #282c37;
-    }
-
-    a:nth-child(1) > svg:hover {
-      path {
-        fill: #3b5998;
-      }
-    }
-
-    a:nth-child(2) > svg:hover {
-      path {
-        fill: #43d854;
-      }
-    }
-
-    a:nth-child(3) > svg:hover {
-      path {
-        fill: #0088cc;
-      }
-    }
-
-    &__burgerMenu {
-      display: none;
-    }
+  &__closeButton {
+    display: none;
+    position: absolute;
+    top: 3px;
+    left: 22px;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 0 4px;
+
     &__nav {
       display: none;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      background-color: #fff;
+
+      &-list {
+        flex-direction: column;
+        padding: 0 0 30px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        &-item {
+          padding-bottom: 45px;
+        }
+      }
+
+      &-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 152px;
+
+        svg {
+          margin: 0;
+        }
+      }
     }
-    &__link {
-      display: none;
+
+    &__logo {
+      &-mobile {
+        display: block;
+        padding: 132px 0 80px;
+        width: 64px;
+      }
     }
 
     &__burgerMenu {
@@ -101,5 +152,16 @@
       background: url("../images/burger.svg") center no-repeat;
       background-size: contain;
     }
+
+    &__closeButton {
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 22px;
+    }
+  }
+
+  .visable {
+    display: flex;
   }
 }

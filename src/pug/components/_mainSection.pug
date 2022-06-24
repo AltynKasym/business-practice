@@ -11,7 +11,7 @@ section.main.container
             h1.banner__info-title Создаем решения
             h2.banner__info-subtitle Для роста бизнеса
             p.banner__info-text.col-12.col-sd-11.col-md-11 На основе анализа данных с алгоритмами реализации
-            button.button Обсудить проблему
+            button.button.banner-button Обсудить проблему
             img.banner-arrows.col(src='./images/arrows.svg')   
         .col-md-1
         img.banner__media.col-9.col-md-5(src='./images/cube.svg')
@@ -19,7 +19,19 @@ section.main.container
         .col-7 
           img.banner-bottomLine.col-md-7(src='./images/bottom-line.svg')   
           img.banner-bottomLine2.col-ls-6(src='./images/bottom-line2.svg')   
-          
+        .main__form
+            .form.col-12
+                form.col-12.form-inner(action="") 
+                    h2.form-title Оставьте заявку
+                    input.form-input(type="text" name='first_name' placeholder='Ваше имя')
+                    p.form-warning поле обязательно*
+                    input.form-input(type="email" name='email' placeholder='Email')
+                    p.form-warning поле обязательно*
+                    textarea.form-input(type="textarea" rows="7" cols="50" placeholder='Пожалуйста опишите вашу проблему')
+                    p.form-warning поле обязательно*
+                    button.button.form-button Отправить
+                    img.form-closeButton(src='./images/closeButton.svg')
+                    p.form-status Ваша заявка успешно отправлена!
     .main__feature.row 
         each item in featureList
             .main__feature-item.col-12.col-md-6
