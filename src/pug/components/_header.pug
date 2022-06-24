@@ -2,16 +2,18 @@ header.header
     .container
         .header__inner.row 
             a.header__logo.col-1.col-md-3.col-lg-4
-                img.header__logo-image(src='./images/logo.svg' alt='Logo')
+                +image('logo','svg','logo','header__logo-image')
+                //- img.header__logo-image(src=require('./images/logo.svg') alt='Logo')
                 h3.header__logo-text Бизнес практика
             .header__nav.col-9.col-md-9.col-lg-8
-                img.header__logo-mobile(src='./images/logo.svg' alt='Logo')
+                +image('logo','svg','logo','header__logo-mobile')
+                //- img.header__logo-mobile(src=require('./images/logo.svg') alt='Logo')
                 ul.header__nav-list.col-md-9
-                    a(href='/')
+                    a(href='./')
                         li.header__nav-list-item Консультации
                     a(href='#services')
                         li.header__nav-list-item Услуги
-                    a(href='/trainingsList.html')
+                    a(href='./trainingsList.html')
                         li.header__nav-list-item Тренинги
                     a(href='https://example.com' target='_blank')
                         li.header__nav-list-item Блог

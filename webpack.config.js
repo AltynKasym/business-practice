@@ -23,7 +23,7 @@ module.exports = {
       watch: true,
     },
   },
-  devtool: "source-map",
+  // devtool: "source-map",
   optimization: {
     splitChunks: {
       chunks: "all",

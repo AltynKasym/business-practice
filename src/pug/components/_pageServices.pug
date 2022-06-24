@@ -17,7 +17,7 @@
 .pageServices 
     .container 
         p Главная > Услуги
-        img.pageServices__octagon(src='./images/services-octagon.svg')
+        img.pageServices__octagon(src=require('./images/services-octagon.svg') alt='Узор')
         h1.pageServices__title Разрабатываем маркетинг-план: дорожная карта достижения целей
         .pageServices__list 
             each item in list.services

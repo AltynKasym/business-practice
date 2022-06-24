@@ -15,13 +15,13 @@
     ]
 
 section.services.container#services
-    img.services-octagon(src='./images/services-octagon.svg')
-    img.services-line.col-md-8(src='./images/services-line.svg')
+    img.services-octagon(src=('./images/services-octagon.svg') alt='узор')
+    img.services-line.col-md-8(src=('./images/services-line.svg') alt='узор')
     h1.services-title Услуги
     .row
         each item in servicesList 
             div(class=item.class)
-                a(href='/services.html')
+                a(href='./services.html')
                     .services__item
                         img.services__item-image(src=item.image)
                         p.services__item-text=item.text

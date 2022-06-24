@@ -4,21 +4,21 @@
 section.main.container
     .main__banner.row
         .row
-            img.banner-octagon.col-2(src='./images/octagons.svg')
-            img.banner-topLine.col-sd-10.col-md-7(src='./images/top-line.svg')
+            img.banner-octagon.col-2(src=require('./images/octagons.svg') alt='Узор')
+            img.banner-topLine.col-sd-10.col-md-7(src=require('./images/top-line.svg') alt='Узор')
            
         .banner__info.col-md-6
             h1.banner__info-title Создаем решения
             h2.banner__info-subtitle Для роста бизнеса
             p.banner__info-text.col-12.col-sd-11.col-md-11 На основе анализа данных с алгоритмами реализации
             button.button.banner-button Обсудить проблему
-            img.banner-arrows.col(src='./images/arrows.svg')   
+            img.banner-arrows.col(src=require('./images/arrows.svg') alt='Узор')   
         .col-md-1
-        img.banner__media.col-9.col-md-5(src='./images/cube.svg')
+        img.banner__media.col-9.col-md-5(src=require('./images/cube.svg') alt='cube')
         .col-2 
         .col-7 
-          img.banner-bottomLine.col-md-7(src='./images/bottom-line.svg')   
-          img.banner-bottomLine2.col-ls-6(src='./images/bottom-line2.svg')   
+          img.banner-bottomLine.col-md-7(src=require('./images/bottom-line.svg') alt='Узор')   
+          img.banner-bottomLine2.col-ls-6(src=require('./images/bottom-line2.svg') aly='узор')   
         .main__form
             .form.col-12
                 form.col-12.form-inner(action="") 
@@ -30,7 +30,7 @@ section.main.container
                     textarea.form-input(type="textarea" rows="7" cols="50" placeholder='Пожалуйста опишите вашу проблему')
                     p.form-warning поле обязательно*
                     button.button.form-button Отправить
-                    img.form-closeButton(src='./images/closeButton.svg')
+                    img.form-closeButton(src=require('./images/closeButton.svg') alt='Закрыть форму')
                     p.form-status Ваша заявка успешно отправлена!
     .main__feature.row 
         each item in featureList

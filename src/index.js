@@ -37,6 +37,7 @@ function openForm() {
 function closeForm() {
   mainForm.classList.remove("form-visable");
   body.style.overflowY = "auto";
+  formStatus.classList.remove("form-status-visiable");
   input.forEach((item, id) => {
     item.value = "";
   });
@@ -74,22 +75,18 @@ function sendData(e) {
     // item.value = "";
   });
   if (k === 3) {
-    setInterval(
-      sendButton.classList.add("button-disabled"),
+    sendButton.classList.add("button-disabled"),
       (sendButton.innerText = "Идет отправка..."),
       sendButton.setAttribute("disabled", ""),
-      formStatus.classList.add("form-status-visiable"),
-      1000
-    );
-    setTimeout(() => {
-      sendButton.innerText = "Отправить";
-      sendButton.removeAttribute("disabled", "");
-      sendButton.classList.remove("button-disabled");
-      formStatus.classList.remove("form-status-visiable");
-      input.forEach((item, id) => {
-        item.value = "";
-      });
-    }, 3000);
+      setTimeout(() => {
+        sendButton.innerText = "Отправить";
+        sendButton.removeAttribute("disabled", "");
+        sendButton.classList.remove("button-disabled");
+        formStatus.classList.add("form-status-visiable");
+        input.forEach((item, id) => {
+          item.value = "";
+        });
+      }, 3000);
   }
   console.log(
     `Имя: ${input[0].value}, e-mail:${input[1].value}, Текст: ${input[2].value}`
