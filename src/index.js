@@ -71,21 +71,19 @@ function sendData(e) {
       warning[id].style.visibility = "hidden";
       k++;
     }
-
-    // item.value = "";
   });
   if (k === 3) {
-    sendButton.classList.add("button-disabled"),
-      (sendButton.innerText = "Идет отправка..."),
+    (sendButton.innerText = "Идет отправка..."),
       sendButton.setAttribute("disabled", ""),
+      (sendButton.style.background = "#9fa7b0"),
       setTimeout(() => {
         sendButton.innerText = "Отправить";
         sendButton.removeAttribute("disabled", "");
-        sendButton.classList.remove("button-disabled");
         formStatus.classList.add("form-status-visiable");
-        input.forEach((item, id) => {
-          item.value = "";
-        });
+        (sendButton.style.background = "#47cf34"),
+          input.forEach((item, id) => {
+            item.value = "";
+          });
       }, 3000);
   }
   console.log(
