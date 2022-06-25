@@ -22,18 +22,18 @@
         .pageServices__list 
             each item in list.services
                 .pageServices__list-item
-                    +list(item,'pageServices__list-img','pageServices__list-text')
+                    +list(item,'pageServices__list-img',item,'pageServices__list-text')
         h2.pageServices__subtitle Описание услуги
         p.pageServices__text Любая компания ставит себе цель непрерывного развития, которая отражается в итоговом плане действий по ее достижению. Основным измерением достижения цели является рост прибыли по результатам планируемого периода. Понимание траектории развития рынка, положения и стратегий его основных участников, позволяет правильно оценить свои возможности и поставить объективно достижимые цели. 
         p.pageServices__text Конкретный план действий по достижению целей разрабатывается на основе потребительских трендов и прогноза действий конкурентов.
         p.pageServices__text Математическая модель контроля позволяет на основе сравнения плановых и фактических измеряемых величин контролировать ситуацию и своевременно предпринимать необходимые действия.
         p.pageServices__text Основные этапы разработки маркетинг-плана:
 
-        ul.pageServices__development 
+        .pageServices__development 
             each item in list.development 
                 .pageServices__development-item
-                    img.pageServices__development-image(src='./images/dev-disc.svg')
-                    li.pageServices__development-text=item 
+                    img.pageServices__development-image(src='./images/dev-disc.svg' alt='Список сервисов')
+                    p.pageServices__development-text=item 
 
 
                 

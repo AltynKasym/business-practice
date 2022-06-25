@@ -45,7 +45,7 @@
 .pageTraining 
     .container 
         p Главная > Услуги
-        img.pageTraining__octagon(src='./images/services-octagon.svg')
+        img.pageTraining__octagon(src='./images/services-octagon.svg' alt='Узор')
         h1.pageTraining__title Бизнес-тренинг «Маркетинг – технология роста»
         p.pageTraining__description Для кого: руководители компаний, маркетологи, продавцы
         p.pageTraining__description Цели бизнес-тренинга:
@@ -53,10 +53,10 @@
         .pageTraining__list 
             each item in training.target
                 .pageTraining__list-item
-                    +list(item,'pageServices__list-img','pageServices__list-text')
+                    +list(item,'pageServices__list-img',item,'pageServices__list-text')
             button.button.pageTraining__button Подробнее
         h2.pageTraining__subtitle Программа бизнес-тренинга
-        ul.pageTraining__programm
+        .pageTraining__programm
             - for (let i=0;i<trainingProgramm.length; i++)
                 - if (i==4)
                         - for (let j=0;j<caseText.length; j++)
@@ -68,7 +68,7 @@
                 each text in trainingProgramm[i].list
                     .pageTraining__programm-item
                         img.pageTraining__programm-image(src=require('./images/dev-disc.svg') alt='programm')
-                        li.pageTraining__programm-text=text 
+                        p.pageTraining__programm-text=text 
         
 
 
