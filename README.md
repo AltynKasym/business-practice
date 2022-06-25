@@ -1,5 +1,3 @@
-# Webpack template v.2
-Basic configuration of Webpack.
 
 ## Technologies
     "@babel/core": "^7.15.8",
@@ -41,3 +39,6 @@ Development mode
 ```
 npm run dev
 ```
+
+## Форматирование документа
+    Для форматирования документа необходимо нажать SHIFT+ALT+F
