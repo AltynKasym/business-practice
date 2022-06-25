@@ -1,6 +1,6 @@
 mixin image(name,ext,alt,textClass)
     img(src=require(`./images/${name}.${ext}`) alt=alt class!=textClass)
 
-mixin list(text,imageClass,textClass)
-    img(src=require(`./images/features_image.svg`) class!=imageClass)
+mixin list(text,imageClass,alt,textClass)
+    img(src=require(`./images/features_image.svg`) alt=alt class!=imageClass)
     p(class!=textClass)=text  

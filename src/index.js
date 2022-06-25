@@ -3,12 +3,16 @@ import "./style/style.scss";
 // Бургер меню
 
 const burgerMenu = document.querySelector(".header__burgerMenu");
+const menuItem = document.querySelectorAll(".header__nav-list-item");
 const MenuCloseButton = document.querySelector(".header__closeButton");
 const menu = document.querySelector(".header__nav");
 const body = document.querySelector("body");
 
 burgerMenu.addEventListener("click", openMenu);
 MenuCloseButton.addEventListener("click", closeMenu);
+menuItem.forEach((item) => {
+  item.addEventListener("click", closeMenu);
+});
 
 function openMenu() {
   menu.classList.add("visable");

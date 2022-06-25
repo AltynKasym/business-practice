@@ -20,7 +20,7 @@
 .trainingsList 
     .container 
         p Главная > Услуги
-        img.trainingsList__octagon(src='./images/services-octagon.svg')
+        img.trainingsList__octagon(src='./images/services-octagon.svg' alt='Узор')
 
         each item in trainingList
             .row.trainingsList__card 
@@ -31,10 +31,11 @@
                 col-12.col-lg-6
                     each list in item.list 
                         .trainingsList__list
-                            +list(list,'trainingsList__list-img','trainingsList__list-text')
+                            +list(list,'trainingsList__list-img',list,'trainingsList__list-text')
                 .row
-                a(href='./training.html')
-                    button.button.trainingsList__button Подробнее
+                a(href='./training.html' class='button trainingsList__button') Подробнее
+             
+               
                         
                     
 
