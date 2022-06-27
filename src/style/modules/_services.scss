@@ -69,6 +69,19 @@
   }
 }
 
+.breadcrumbs {
+  color: #9fa7b0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  & > span {
+    color: #282c37;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .pageServices {
     padding-top: 30px;
